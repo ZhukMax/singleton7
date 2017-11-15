@@ -1,9 +1,9 @@
 <?php
-namespace ;
+namespace Singleton7;
 
 /**
  * Class AbstractSingleton
- * @package 
+ * @package Singleton7
  */
 abstract class AbstractSingleton implements SingletonInterface
 {
