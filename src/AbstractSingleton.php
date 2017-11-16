@@ -10,7 +10,7 @@ abstract class AbstractSingleton implements SingletonInterface
     /**
      * @var array
      */
-    private static $_instances = [];
+    private static $_instances;
 
     /**
      * AbstractSingleton constructor.
