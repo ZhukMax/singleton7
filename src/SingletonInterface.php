@@ -1,9 +1,9 @@
 <?php
-namespace Singleton;
+namespace Singleton7;
 
 /**
  * Interface SingletonInterface
- * @package Singleton
+ * @package Singleton7
  */
 interface SingletonInterface
 {
