@@ -21,6 +21,7 @@ abstract class AbstractSingleton implements SingletonInterface
 
     final public static function getInstance()
     {
-        return self::$_instances ?: new static;
+        self::$_instances = self::$_instances ?: new static;
+        return self::$_instances;
     }
 }
