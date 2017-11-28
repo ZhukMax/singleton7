@@ -16,13 +16,13 @@ abstract class AbstractSingleton implements SingletonInterface
      * AbstractSingleton constructor.
      * @param array $options
      */
-    abstract private function __construct($options);
+    abstract private function __construct(array $options);
     final private function __clone(){}
     final private function __wakeup(){}
 
-    final public static function getInstance()
+    final public static function getInstance($options = []) : SingletonInterface
     {
-        self::$_instances = self::$_instances ?: new static;
+        self::$_instances = self::$_instances ?: new static($options);
         return self::$_instances;
     }
 }
