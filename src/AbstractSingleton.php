@@ -14,8 +14,9 @@ abstract class AbstractSingleton implements SingletonInterface
 
     /**
      * AbstractSingleton constructor.
+     * @param array $options
      */
-    final private function __construct(){}
+    abstract private function __construct($options);
     final private function __clone(){}
     final private function __wakeup(){}
 
