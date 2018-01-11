@@ -8,7 +8,7 @@ namespace Singleton7;
 abstract class AbstractSingleton implements SingletonInterface
 {
     /**
-     * @var array
+     * @var SingletonInterface
      */
     private static $_instances;
 
